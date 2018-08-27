@@ -1,6 +1,6 @@
 {
     "name": "Gradient New Tab",
-    "version": "0.1",
+    "version": "0.1.1",
     "description": "By Roderick Qiu. Some of the gradients were from UIGradients.",
     "manifest_version": 2,
     "chrome_url_overrides": {
@@ -11,5 +11,6 @@
         "32": "src/extension_icon32.png",
         "48": "src/extension_icon48.png",
         "128": "src/extension_icon128.png"
-      }
+     },
+     "homepage_url": "https://roderickqiu.scris.top"
 }
