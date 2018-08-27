@@ -1,2 +1,2 @@
 # GradientNewtab
-My own newtab snippet.
+A Minimalist Chrome Newtab Plugin
