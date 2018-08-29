@@ -1,6 +1,6 @@
 {
     "name": "Gradient New Tab",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "By Roderick Qiu. Some of the gradients were from uiGradients.",
     "manifest_version": 2,
     "chrome_url_overrides": {

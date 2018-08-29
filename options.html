@@ -9,9 +9,10 @@
             font-family: "Dubai", sans-serif;
             background-color: #f7f7f7;
         }
-        h1{
-            font-size: 4rem;
-            line-height: 1rem;
+        #head{
+            font-size: 3rem;
+            border-spacing: 0rem;
+            vertical-align:middle;
         }
         #buttonDiv button{
             background-color: rgb(78, 78, 78);
@@ -22,27 +23,42 @@
             font-size: 1rem;
             font-family: "Dubai", sans-serif;
         }
-        #main{
-            text-align: center;
-            transform: translateY(100px);
+        #container{
+            position: absolute;
+            top: 10%;
+            transform: translateX(30%);
+            display: block;
+        }
+        #mainTable td{
             font-size: 1.2rem; 
+            padding: 20px 10px 20px 10px;
+	        border-top: #dddddd solid 1px;
+	        vertical-align:top;
         }
-        #aboutDiv{
-            font-size: 1rem;
+        #mainTable #title{
+            font-weight: bolder;
         }
+        
     </style>
 </head>
 <body>
-    <div id="main">
-        <h1>Options</h1>
-        <h2>Direction</h2>
-        <div id="buttonDiv"></div>
-        <h2>About Gradient New Tab</h2>
-        <div id="aboutDiv">
-            &copy;2018 Roderick Qiu<br/>
-            To see more, go to <a href="https://roderickqiu.scris.top/GradientNewTab-Homepage/" target="_blank">the website</a>.
-        </div>
+    <div id="container">
+        <table id="mainTable">
+            <h1 id="head">&nbsp;Options</h1>
+            <tr>
+                <td id="title">Direction</td>
+                <td><div id="buttonDiv"></div></td>
+            </tr>
+            <tr>
+                <td id="title">About</td>
+                <td>
+                    &copy;2018 Roderick Qiu<br/>
+                    To see more, go to <a href="https://roderickqiu.scris.top/GradientNewTab-Homepage/" target="_blank">the website</a>.
+                </td>
+            </tr>
+        </table>
     </div>
+    
     <script src="src/options.js"></script>
 </body>
 </html>
