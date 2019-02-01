@@ -1,12 +1,6 @@
-chrome.storage.local.get('d', function(data) {
 document.write('<title>Newtab</title>')
 document.write('<style>#gradient{background: linear-gradient(');//这一行以及之后的每一行g(g:gradient)都是用于动态加载style事件的
-//方向设定
-let direction = data.d;
-console.log(direction);
-if(direction==undefined) direction='to right';
-var g=direction;
-g+=",";
+var g='to right,';
 //颜色设定
 var allSum=64;//到现在为止，已经有64组了^_^
 var r=Math.floor(Math.random()*allSum);//随机数
@@ -142,4 +136,3 @@ if(r==0){//红色系
 g+="); }</style>";
 document.write(g);
 document.write('<body id="gradient"></body>');
-});
